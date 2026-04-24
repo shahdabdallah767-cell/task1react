@@ -1,5 +1,5 @@
 
-import { createBrowserRouter, RouterProvider } from 'react-router';
+import { createHashRouter, RouterProvider } from 'react-router';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Blog from './Pages/Blog/Blog';
@@ -14,7 +14,7 @@ import BlogDeatails from './Pages/BlogDeatils/BlogDeatails';
 
 
 export default function App() {
-  const myrouter = createBrowserRouter([
+  const myrouter = createHashRouter([
 
     {path: "", element: <Layout/>, children:[
 
