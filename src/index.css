@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap");
+
+@theme {
+  --font-sans: "Tajawal", system-ui, sans-serif;
+  --color-brand: #f97316;
+  --color-brand-hover: #ea580c;
+  --color-surface: #0a0a0b;
+  --color-surface-elevated: #18181b;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: #fafafa;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.bg-grid-subtle {
+  background-image:
+    linear-gradient(to right, rgb(39 39 42 / 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(39 39 42 / 0.35) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.nav-link-active {
+  background-color: var(--color-brand);
+  color: white;
+}
+
+.hero-glow {
+  background: radial-gradient(
+    ellipse 85% 55% at 50% 32%,
+    rgb(249 115 22 / 0.14),
+    transparent 58%
+  );
+}
+
+.home-feature-img {
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
